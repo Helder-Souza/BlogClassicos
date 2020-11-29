@@ -22,7 +22,7 @@ public class Tema {
 	private long id;
 	
 	@NotNull
-	private String tema;
+	private String descricao;
 	
 	@OneToMany(mappedBy = "tema", cascade = CascadeType.ALL)
 	@JsonIgnoreProperties("tema")
@@ -36,12 +36,12 @@ public class Tema {
 		this.id = id;
 	}
 
-	public String getTema() {
-		return tema;
+	public String getDescicao() {
+		return descricao;
 	}
 
-	public void setTemapost(String tema) {
-		this.tema = tema; 
+	public void setDescricao(String descricao) {
+		this.descricao = descricao; 
 	}
 
 	public List<Postagem> getPostagem() {
@@ -51,11 +51,6 @@ public class Tema {
 	public void setPostagem(List<Postagem> postagem) {
 		this.postagem = postagem;
 	}
-
-	public void setTema(String tema) {
-		this.tema = tema;
-	}
-	
 	
 
 }

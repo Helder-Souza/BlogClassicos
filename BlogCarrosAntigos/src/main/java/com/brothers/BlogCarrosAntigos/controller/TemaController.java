@@ -20,7 +20,7 @@ import com.brothers.BlogCarrosAntigos.repository.TemaRepository;
 
 @RestController
 @CrossOrigin(origins = "*", allowedHeaders = "*")
-@RequestMapping("/temapost")
+@RequestMapping("/tema")
 public class TemaController {
 	
 	@Autowired
@@ -35,9 +35,9 @@ public class TemaController {
 		return repository.findById(id).map(resp ->ResponseEntity.ok(resp))
 				.orElse(ResponseEntity.notFound().build());
 	}
-	@GetMapping("/tema/{tema}")
-	public ResponseEntity<List<Tema>>getByTema(@PathVariable String tema){
-		return ResponseEntity.ok(repository.findAllByTemaContainingIgnoreCase(tema)); 
+	@GetMapping("/nome/{nome}")
+	public ResponseEntity<List<Tema>>getByName(@PathVariable String nome){
+		return ResponseEntity.ok(repository.findAllByDescricaoContainingIgnoreCase(nome)); 
 	}
 
 

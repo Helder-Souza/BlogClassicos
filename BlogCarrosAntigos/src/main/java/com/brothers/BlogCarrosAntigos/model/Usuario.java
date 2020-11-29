@@ -17,7 +17,7 @@ public class Usuario {
 	private long id;
 	
 	@NotNull
-	@Size(min = 5, max = 100)
+	@Size(min = 3, max = 100)
 	private String nome;
 	
 	@NotNull

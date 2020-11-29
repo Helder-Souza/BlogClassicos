@@ -8,6 +8,6 @@ import com.brothers.BlogCarrosAntigos.model.Tema;
 
 public interface TemaRepository extends JpaRepository<Tema, Long> {
 	
-	public List<Tema>findAllByTemaContainingIgnoreCase(String tema);
+	public List<Tema>findAllByDescricaoContainingIgnoreCase(String descricao);
 
 }
