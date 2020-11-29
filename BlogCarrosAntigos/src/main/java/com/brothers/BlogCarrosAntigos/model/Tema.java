@@ -36,12 +36,12 @@ public class Tema {
 		this.id = id;
 	}
 
-	public String getDescicao() {
+	public String getDescricao() {
 		return descricao;
 	}
 
 	public void setDescricao(String descricao) {
-		this.descricao = descricao; 
+		this.descricao = descricao;
 	}
 
 	public List<Postagem> getPostagem() {
@@ -51,6 +51,8 @@ public class Tema {
 	public void setPostagem(List<Postagem> postagem) {
 		this.postagem = postagem;
 	}
+
+
 	
 
 }

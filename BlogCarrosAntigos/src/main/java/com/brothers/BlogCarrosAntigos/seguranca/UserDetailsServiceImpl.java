@@ -16,7 +16,7 @@ import com.brothers.BlogCarrosAntigos.repository.UsuarioRepository;
 public class UserDetailsServiceImpl implements UserDetailsService {
 
 	@Autowired
-	private UsuarioRepository userRepository;
+	private UsuarioRepository userRepository; 
 
 	@Override
 	public UserDetails loadUserByUsername(String userName) throws UsernameNotFoundException {
