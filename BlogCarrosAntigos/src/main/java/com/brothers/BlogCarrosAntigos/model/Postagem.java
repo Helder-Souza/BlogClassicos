@@ -30,6 +30,8 @@ public class Postagem {
 	@NotNull
 	@Size(min = 10, max = 1000)
 	private String texto;
+	
+	private String imagem;
 
 	@Temporal(TemporalType.TIMESTAMP)
 	private Date data = new java.sql.Date(System.currentTimeMillis());
@@ -61,6 +63,14 @@ public class Postagem {
 
 	public void setTexto(String texto) {
 		this.texto = texto;
+	}
+	
+	public String getImagem() {
+		return imagem;
+	}
+
+	public void setImagem(String imagem) {
+		this.imagem = imagem;
 	}
 
 	public Date getData() {

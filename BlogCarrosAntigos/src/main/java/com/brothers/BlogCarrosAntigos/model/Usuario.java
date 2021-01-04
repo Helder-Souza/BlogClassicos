@@ -28,7 +28,12 @@ public class Usuario {
 	@Size(min = 5)
 	private String senha;
 	
-
+	private String imagem;
+	
+	private String linkGitHub;
+	
+	private String linkLinkedin;
+	
 	public long getId() {
 		return id;
 	}
@@ -60,5 +65,33 @@ public class Usuario {
 	public void setSenha(String senha) {
 		this.senha = senha;
 	}
+
+	public String getImagem() {
+		return imagem;
+	}
+
+	public void setImagem(String imagem) {
+		this.imagem = imagem;
+	}
+
+	public String getLinkGitHub() {
+		return linkGitHub;
+	}
+
+	public void setLinkGitHub(String linkGitHub) {
+		this.linkGitHub = linkGitHub;
+	}
+
+	public String getLinkLinkedin() {
+		return linkLinkedin;
+	}
+
+	public void setLinkLinkedin(String linkLinkedin) {
+		this.linkLinkedin = linkLinkedin;
+	}
+
+	
+	
+	
 	
 }
